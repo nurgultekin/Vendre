@@ -1,8 +1,8 @@
-const typography = require('@tailwindcss/typography');
-const forms = require('@tailwindcss/forms');
-const aspectRatio = require('@tailwindcss/aspect-ratio');
+import typography from '@tailwindcss/typography';
+import forms from '@tailwindcss/forms';
+import aspectRatio from '@tailwindcss/aspect-ratio';
 
-module.exports = {
+export default {
   content: [
     // Example content paths...
     './public/**/*.html',
@@ -15,8 +15,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    typography,
-    forms,
-    aspectRatio,
+    typography(),
+    forms(),
+    aspectRatio(),
   ],
 };

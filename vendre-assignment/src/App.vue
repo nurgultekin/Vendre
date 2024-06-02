@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <NavigationBar />
     <div class="container mx-auto mt-24">
       <h1 class="text-3xl font-bold mb-6 text-center">Staff List</h1>
       <StaffList />
@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import Navbar from './components/NavBar.vue';
+import NavigationBar from './components/NavBar.vue';
 import StaffList from './components/StaffList.vue';
 
 
 export default {
   name: 'App',
   components: {
-    Navbar,
+    NavigationBar,
     StaffList,
   },
 };
